@@ -131,7 +131,7 @@ Code comments and log messages are mostly in Chinese.
 ```bibtex
 @thesis{shi2026mac4e,
   title  = {Research on Erroneous Knowledge Detection Based on Multi-Agent Cooperation},
-  author = {Shi, Yike},
+  author = {Yike SHI},
   school = {Beihang University},
   type   = {Bachelor's thesis},
   year   = {2026}
