@@ -1,0 +1,23 @@
+fb15k:
+  train_path: "./data/FB15k/freebase_mtr100_mte100-train.txt"
+  valid_path: "./data/FB15k/freebase_mtr100_mte100-valid.txt"
+  test_path: "./data/FB15k/freebase_mtr100_mte100-test.txt"
+
+fb15k237:
+  train_path: "./data/FB15k/fb15k237-train.txt"
+  valid_path: "./data/FB15k/fb15k237-valid.txt"
+  test_path: "./data/FB15k/fb15k237-test.txt"
+
+wn18rr:
+  train_path: "./data/WN18RR/train.txt"
+  valid_path: "./data/WN18RR/valid.txt"
+  test_path: "./data/WN18RR/test.txt"
+
+nell995:
+  train_path: "./data/NELL-995/train.txt"
+  valid_path: "./data/NELL-995/valid.txt"
+  test_path: "./data/NELL-995/test.txt"
+
+noise_levels: [0.05, 0.10, 0.15]
+output_dir: "./outputs"
+

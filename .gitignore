@@ -1,0 +1,17 @@
+# Python cache
+__pycache__/
+*.py[cod]
+
+# macOS
+.DS_Store
+
+# Data & model checkpoints (too large for git; see README for download)
+data/
+outputs/
+*.pt
+
+# Logs & envs
+*.log
+.env
+.venv/
+venv/

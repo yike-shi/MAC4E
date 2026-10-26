@@ -1,0 +1,16 @@
+torch
+torch-geometric>=2.3.0
+numpy
+pandas
+pyyaml
+tqdm
+networkx
+transformers
+sentencepiece
+accelerate
+langchain
+requests
+scikit-learn
+matplotlib
+openai
+datasets

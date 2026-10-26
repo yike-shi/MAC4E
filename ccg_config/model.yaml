@@ -1,0 +1,32 @@
+embedding:
+  dim: 100                   # TransE 实体/关系向量维度
+  complex_dim: 200           # ComplEx 向量维度（通常需大于 TransE，如 200/400，否则表现易偏弱）
+  margin: 1.0                #三元组损失函数的边际值
+  learning_rate: 0.001       #学习率
+  batch_size: 1024           #批量大小
+  epochs: 400                #训练轮数
+  negative_sample_size: 1    #负样本数量
+
+gcn:
+  hidden_dim: 64             #GCN隐藏层维度
+  num_layers: 2              #GCN层数（同时作为子图 k-hop 深度）
+  epochs: 10                 #RGCN 子图编码器训练轮数，建议 20~50，按验证 loss 调整
+  max_subgraph_nodes: 1000    #单子图最大节点数，超过则 BFS 截断，防止大子图导致 MemoryError 
+
+allocator:
+  hidden_dims: [128, 64, 32]   # 3 层隐藏层，容量更大
+  learning_rate: 0.001
+  epochs: 100
+
+agents:
+  structure_weights: [0.4, 0.3, 0.3]   # 每个 Agent 内部打分的合成逻辑：w1, w2, w3
+  logic_weights: [0.5, 0.5]            # 平衡传统的逻辑规则检查和大模型的推理能力β1, β2
+
+discussion:                            #控制多轮迭代的退出条件
+  var_threshold: 0.05
+  max_rounds: 2
+
+arbitrator:                            #仲裁者，用于最终决策
+  # 预留参数位置
+  use_dynamic_weight: true
+
